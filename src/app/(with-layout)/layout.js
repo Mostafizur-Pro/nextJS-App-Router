@@ -1,9 +1,6 @@
-// import Footer from "@/components/shared/Footer";
-import "./globals.css";
-// import Navbar from "@/components/shared/Navber";
-// import { Inter } from 'next/font/google'
+import Footer from "@/components/shared/Footer";
 
-// const inter = Inter({ subsets: ['latin'] })
+import Navbar from "@/components/shared/Navber";
 
 export const metadata = {
   title: "Home",
@@ -14,9 +11,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        {/* <Navbar /> */}
+        <Navbar />
         <div className="min-h-screen">{children}</div>
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );
